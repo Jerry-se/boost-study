@@ -104,16 +104,16 @@ int main(int, char*[]) {
   src::severity_channel_logger<severity_level, // the type of the severity level
   std::string> moduleTwoLogger(keywords::channel = "module two");
 
-  BOOST_LOG_SEV(moduleOneLogger, trace)<< "A trace severity message";
-  BOOST_LOG_SEV(moduleOneLogger, debug)<< "A debug severity message";
-  BOOST_LOG_SEV(moduleOneLogger, info)<< "An informational severity message";
-  BOOST_LOG_SEV(moduleOneLogger, warning)<< "A warning severity message";
-  BOOST_LOG_SEV(moduleOneLogger, error)<< "An error severity message";
-  BOOST_LOG_SEV(moduleOneLogger, fatal)<< "A fatal severity message";
+  BOOST_LOG_SEV(moduleOneLogger, trace) << "A trace severity message";
+  BOOST_LOG_SEV(moduleOneLogger, debug) << "A debug severity message";
+  BOOST_LOG_SEV(moduleOneLogger, info) << "An informational severity message";
+  BOOST_LOG_SEV(moduleOneLogger, warning) << "A warning severity message";
+  BOOST_LOG_SEV(moduleOneLogger, error) << "An error severity message";
+  BOOST_LOG_SEV(moduleOneLogger, fatal) << "A fatal severity message";
 
-  BOOST_LOG_SEV(moduleTwoLogger, info)<< "An informational severity message";
-  BOOST_LOG_SEV(moduleTwoLogger, fatal)<< "An informational severity message";
-  BOOST_LOG_SEV(moduleOneLogger, trace)<< "A trace severity message";
+  BOOST_LOG_SEV(moduleTwoLogger, info) << "An informational severity message";
+  BOOST_LOG_SEV(moduleTwoLogger, fatal) << "An informational severity message";
+  BOOST_LOG_SEV(moduleOneLogger, trace) << "A trace severity message";
 
   return 0;
 }

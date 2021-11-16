@@ -23,7 +23,7 @@ void init() {
         keywords::format = "[%TimeStamp%]: %Message%"                                 /*< log record format >*/
     );
 
-  logging::core::get()->set_filter(logging::trivial::severity>=logging::trivial::info);
+  logging::core::get()->set_filter(logging::trivial::severity >= logging::trivial::debug);
 }
 
 int main(int argc, char* argv[]) {

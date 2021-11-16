@@ -18,12 +18,12 @@ namespace keywords = boost::log::keywords;
 void init1() {
   // logging::add_console_log();
   logging::add_file_log("logs/sample.log");
-  logging::core::get()->set_filter(logging::trivial::severity>=logging::trivial::info);
+  logging::core::get()->set_filter(logging::trivial::severity >= logging::trivial::info);
 }
 
 int main(int argc, char* argv[]) {
   init1();
-  BOOST_LOG_TRIVIAL(trace)<<"A trace severity message";
+  BOOST_LOG_TRIVIAL(trace) << "A trace severity message";
   BOOST_LOG_TRIVIAL(debug) << "A debug severity message";
   BOOST_LOG_TRIVIAL(info) << "An informational severity message";
   BOOST_LOG_TRIVIAL(warning) << "A warning severity message";

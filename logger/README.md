@@ -31,5 +31,5 @@ sink决定日志信息输出到什么地方。没有添加sink，boost log将使
 1. [boost doc](https://www.boost.org/doc/libs/1_66_0/libs/log/doc/html/index.html)
 2. [boost.log要点笔记](https://www.cnblogs.com/liaocheng/p/4222885.html)
 3. [boost log使用心得](https://blog.csdn.net/Max_Cong/article/details/83176559)
-4. [boost log库使用 十二 架构研究和主要使用总结](https://blog.csdn.net/qq_43682438/article/details/87876879)
+4. [boost log库使用 十二 架构研究和主要使用总结](https://blog.csdn.net/csfreebird/article/details/20213349)
 5. [boost.log教程: loggers](https://blog.csdn.net/LaineGates/article/details/90137804)
