@@ -350,5 +350,6 @@ MigrationBackup/
 .ionide/
 
 # special file of project
+*.o
 logger/test[1-9]
 logger/unittest
